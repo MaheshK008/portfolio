@@ -2,7 +2,7 @@
 
 Backend-focused Software Engineer with 6+ years of experience building scalable systems using Node.js and AWS.
 
-🌐 Live: https://YOUR_USERNAME.github.io/portfolio/
+🌐 Live: https://maheshk008.github.io/portfolio/
 
 ---
 

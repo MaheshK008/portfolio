@@ -64,7 +64,7 @@ const Hero = () => {
         {/* RIGHT SIDE */}
         <div className="flex justify-center hover:scale-105 transition duration-300">
           <img
-            src={profile}
+            src={`${import.meta.env.BASE_URL}profile.jpeg`}
             alt="Mahesh"
             className="w-72 h-72 object-cover rounded-2xl border border-white/10 shadow-lg"
           />
