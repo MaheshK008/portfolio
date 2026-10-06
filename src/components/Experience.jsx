@@ -1,11 +1,21 @@
 const experiences = [
+   {
+    title: "Senior Software Engineer II - Photon Interactive Pvt Ltd",
+    duration: "Jun 2026 – Present",
+    client : "Alter Domus",
+    points: [
+      "Building and maintaining adi-api-investors, a NestJS 11+ Fastify orchestration service connecting investor onboarding workflows across Fenergo (KYC/AML), GMDM (Global Master Data Management), DocAccess, and S3 — handling the full lifecycle from fund validation through document delivery.",
+      "Designed and implemented a 6-step GMDM onboarding orchestration (fund probe → investor reconciliation → relationship creation → DB persistence → outbox event) with explicit ordering to ensure all external calls complete before any database writes, preventing partial state failures on retry.",
+      "Built a transactional outbox pattern for SQS event publishing: events are written to PostgreSQL in the same transaction as business data, then dispatched asynchronously with retry backoff, idempotency keys, and terminal failure tracking — guaranteeing at-least-once delivery without distributed transactions."
+    ],
+  },
   {
     title: "Client: Daolanto UG (Germany)",
-    duration: "Jan 2023 – Present",
+    duration: "Jan 2023 – Apr 2026",
     subtitle: "Backend Developer | AWS | Serverless",
     companies: [
       "LeoIntelli Consulting (Jan 2023 – Jun 2025)",
-      "Storypeach Technologies (Jul 2025 – Present)",
+      "Storypeach Technologies (Jul 2025 – Apr 2026)",
     ],
     points: [
       "Designed and developed scalable serverless APIs using AWS Lambda and API Gateway",
@@ -16,7 +26,7 @@ const experiences = [
   },
   {
     title: "Software Engineer – Indium Software",
-    duration: "May 2022 – Oct 2022",
+    duration: "May 2022 – Dec 2022",
     points: [
       "Developed frontend applications using React and JavaScript",
       "Built reusable UI components and improved application performance",
@@ -69,6 +79,12 @@ const Experience = () => {
             <p className="text-sm text-gray-400 mt-1">
               {exp.duration}
             </p>
+
+            {exp.client && (
+              <p className="text-sm text-blue-400 mt-2">
+                Client: <span className="font-semibold">{exp.client}</span>
+              </p>
+            )}
 
             {exp.subtitle && (
               <p className="text-sm text-blue-400 mt-2">

@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <section id="contact" className="p-12 text-center">
+    <section id="contact" className="p-12 text-center scroll-mt-16">
       <h2 className="text-3xl font-bold mb-6">Contact</h2>
 
       <p className="text-gray-400 mb-4">kalakattumaheshroyal@gmail.com</p>

@@ -1,8 +1,6 @@
-import profile from "../assets/profile.jpeg";
-
 const Hero = () => {
   return (
-    <section className="min-h-[85vh] flex items-center px-10 md:px-20">
+    <section  id="home" className="min-h-[85vh] flex items-center px-10 md:px-20">
 
       <div className="grid md:grid-cols-2 gap-10 items-center w-full">
 
@@ -15,12 +13,13 @@ const Hero = () => {
           </h1>
 
           <p className="mt-4 text-lg text-gray-400">
-            Node.js Backend Developer specializing in scalable APIs, 
-            real-time systems, and AWS cloud architecture.
+            {/* Node.js Backend Developer specializing in scalable APIs, 
+            real-time systems, and AWS cloud architecture. */}
+            Senior Backend Developer | Node.js | TypeScript | AWS | Distributed Systems
           </p>
 
           <p className="mt-3 text-sm text-gray-500">
-            Building event-driven systems with 6+ years of experience
+            Building event-driven systems with 7+ years of experience
           </p>
 
           {/* Buttons */}
